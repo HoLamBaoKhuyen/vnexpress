@@ -6,13 +6,14 @@ const useStyles = makeStyles((theme) => ({
     bottom: "8vh",
     right: "3%",
     padding: theme.spacing(0.5),
-    color: theme.palette.white.main,
-    background: theme.palette.primary.main,
+    color: theme.palette.grey.main,
+    border: `1px solid ${theme.palette.grey.main}`,
+    // background: theme.palette.primary.main,
     outlineStyle: "none!important",
     zIndex: 5,
 
     "&:hover, &:focus": {
-      background: theme.palette.green.main,
+      background: theme.palette.grey.light,
       transition: "0.3s",
     },
   },

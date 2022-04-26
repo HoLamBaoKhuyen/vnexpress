@@ -16,7 +16,7 @@ const Home = (props) => {
 
   return (
     <>
-      <Container>
+      <Container className={styles.root}>
         <MainThumbnail />
         <BodyCategory />
         <NavbarBody />
@@ -24,6 +24,7 @@ const Home = (props) => {
         <Podcast />
         <Picture />
         <Company />
+        <BackToTop showBelow={300} />
       </Container>
     </>
   );
