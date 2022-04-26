@@ -1,26 +1,32 @@
-// import React from "react";
-// import { Box } from "@material-ui/core";
-// import Carousel from "../../components/Carousel";
-// import SearchMovie from "../../components/SearchMovie";
-// import MovieList from "../../components/MovieList";
-// import ScheduleCinema from "../../components/ScheduleCinema";
-// import BackToTop from "../../components/BackToTop";
-// import useStyles from "./style";
+import React from "react";
+import { Box, Container } from "@material-ui/core";
+import BackToTop from "../../components/BackToTop";
+import useStyles from "./style";
 import wrapper from "../../HOCs/Wrapper";
-// import { useEffect } from "react";
-// import { getCurrentWebPage } from "../../redux/actions/pageAction";
-// import { useDispatch } from "react-redux";
+import MainThumbnail from "../../components/MainThumbnail";
+import BodyCategory from "../../components/BodyCategory";
+import NavbarBody from "../../components/NavbarBody";
+import BodyVideo from "../../components/BodyVideo";
+import Podcast from "../../components/Podcast";
+import Picture from "../../components/Picture";
+import Company from "../../components/Company";
 
 const Home = (props) => {
-  // const styles = useStyles();
-  // const dispatch = useDispatch();
+  const styles = useStyles();
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  //   dispatch(getCurrentWebPage(props.match.url));
-  // }, [dispatch, props.match.url]);
-
-  return <>Hello</>;
+  return (
+    <>
+      <Container>
+        <MainThumbnail />
+        <BodyCategory />
+        <NavbarBody />
+        <BodyVideo />
+        <Podcast />
+        <Picture />
+        <Company />
+      </Container>
+    </>
+  );
 };
 
 export default wrapper(Home);
