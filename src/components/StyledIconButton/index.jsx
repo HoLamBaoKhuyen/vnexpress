@@ -1,7 +1,7 @@
 import { Button } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 
-export const IconButton = withStyles((theme) => ({
+export const StyledIconButton = withStyles((theme) => ({
   root: {
     "&.MuiButton-root": {
       outline: "none",

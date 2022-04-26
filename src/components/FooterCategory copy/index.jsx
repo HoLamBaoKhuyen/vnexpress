@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Link, Typography } from "@material-ui/core";
 import React from "react";
-import { StyledIconButton } from "../StyledIconButton";
+import { IconButton } from "../StyledIconButton";
 import useStyles from "./style";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PublicIcon from "@mui/icons-material/Public";
@@ -39,9 +39,9 @@ const FooterCategory = (props) => {
   return (
     <>
       <Grid container className={styles.root}>
-        <Grid item xs={12} md={8}>
+        <Grid item xs={8}>
           <Grid container>
-            <Grid item xs={4} sm={3}>
+            <Grid item xs={3}>
               <div className={styles.menuTop}>
                 {categories1.map((cat) => (
                   <div>
@@ -59,7 +59,7 @@ const FooterCategory = (props) => {
                 </div>
               ))}
             </Grid>
-            <Grid item xs={4} sm={2}>
+            <Grid item xs={2}>
               {categories3.map((cat) => (
                 <div>
                   <Link href="#" className={styles.link} variant="body2">
@@ -68,7 +68,7 @@ const FooterCategory = (props) => {
                 </div>
               ))}
             </Grid>
-            <Grid item xs={4} sm={2}>
+            <Grid item xs={2}>
               {categories4.map((cat) => (
                 <div>
                   <Link href="#" className={styles.link} variant="body2">
@@ -77,7 +77,7 @@ const FooterCategory = (props) => {
                 </div>
               ))}
             </Grid>
-            <Grid item xs={4} sm={2}>
+            <Grid item xs={2}>
               {categories5.map((cat) => (
                 <div>
                   <Link href="#" className={styles.link} variant="body2">
@@ -86,7 +86,7 @@ const FooterCategory = (props) => {
                 </div>
               ))}
             </Grid>
-            <Grid item xs={4} sm={2}>
+            <Grid item xs={2}>
               {categories6.map((cat) => (
                 <div>
                   <Link href="#" className={styles.link} variant="body2">
@@ -98,29 +98,29 @@ const FooterCategory = (props) => {
           </Grid>
         </Grid>
 
-        <Grid item xs={12} md={4}>
+        <Grid item xs={4}>
           <Grid container className={styles.contact1}>
             <Grid item xs={6}>
               <Typography component="p" variant="body2" className={styles.text}>
                 Tải ứng dụng
               </Typography>
               <div>
-                <StyledIconButton
+                <IconButton
                   variant="outlined"
                   className={styles.button1}
                   startIcon={<PublicIcon />}
                 >
                   VnExpress
-                </StyledIconButton>
+                </IconButton>
               </div>
               <div>
-                <StyledIconButton
+                <IconButton
                   variant="outlined"
                   className={styles.button2}
                   startIcon={<PublicIcon />}
                 >
                   International
-                </StyledIconButton>
+                </IconButton>
               </div>
             </Grid>
             <Grid item xs={6}>
@@ -128,31 +128,31 @@ const FooterCategory = (props) => {
                 Liên hệ
               </Typography>
               <div>
-                <StyledIconButton
+                <IconButton
                   variant="outlined"
                   className={styles.toaSoan}
                   startIcon={<EmailIcon />}
                 >
                   Tòa soạn
-                </StyledIconButton>
+                </IconButton>
               </div>
               <div>
-                <StyledIconButton
+                <IconButton
                   variant="outlined"
                   className={styles.toaSoan}
                   startIcon={<AdUnitsIcon />}
                 >
                   Quảng cáo
-                </StyledIconButton>
+                </IconButton>
               </div>
               <div>
-                <StyledIconButton
+                <IconButton
                   variant="outlined"
                   className={styles.toaSoan}
                   startIcon={<FontDownloadIcon />}
                 >
                   Hợp tác bản quyền
-                </StyledIconButton>
+                </IconButton>
               </div>
             </Grid>
           </Grid>

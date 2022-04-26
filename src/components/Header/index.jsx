@@ -8,7 +8,7 @@ import PublicIcon from "@mui/icons-material/Public";
 import PersonIcon from "@mui/icons-material/Person";
 import Search from "../Search";
 import { LoginButton } from "../LoginButton";
-import { IconButton } from "../IconButton";
+import { StyledIconButton } from "../StyledIconButton";
 // import { InternationalButton } from "../InternationalButton";
 
 const Header = (props) => {
@@ -32,16 +32,19 @@ const Header = (props) => {
         <Box className={styles.rightMenu}>
           <div className={[styles.button, styles.btn].join(" ")}>
             <NavLink to="/">
-              <IconButton variant="outlined" startIcon={<AccessTimeIcon />}>
+              <StyledIconButton
+                variant="outlined"
+                startIcon={<AccessTimeIcon />}
+              >
                 Mới nhất
-              </IconButton>
+              </StyledIconButton>
             </NavLink>
           </div>
           <div className={[styles.button, styles.btn].join(" ")}>
             <NavLink to="/">
-              <IconButton variant="outlined" startIcon={<PublicIcon />}>
+              <StyledIconButton variant="outlined" startIcon={<PublicIcon />}>
                 International
-              </IconButton>
+              </StyledIconButton>
             </NavLink>
           </div>
           <div className={[styles.button, styles.search].join(" ")}>
