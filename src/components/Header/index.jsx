@@ -1,13 +1,15 @@
 import React from "react";
 import { useTheme } from "@material-ui/core/styles";
-import { Box, Grid, Container, Typography } from "@material-ui/core";
-import useStyles, { CssNewestButton, InternationalButton } from "./style";
+import { Box, Container, Typography } from "@material-ui/core";
+import useStyles from "./style";
 import { NavLink } from "react-router-dom";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PublicIcon from "@mui/icons-material/Public";
 import PersonIcon from "@mui/icons-material/Person";
 import Search from "../Search";
 import { LoginButton } from "../LoginButton";
+import { IconButton } from "../IconButton";
+// import { InternationalButton } from "../InternationalButton";
 
 const Header = (props) => {
   const theme = useTheme();
@@ -28,27 +30,21 @@ const Header = (props) => {
           </Typography>
         </Box>
         <Box className={styles.rightMenu}>
-          <div className={styles.button}>
+          <div className={[styles.button, styles.btn].join(" ")}>
             <NavLink to="/">
-              <CssNewestButton
-                variant="outlined"
-                startIcon={<AccessTimeIcon />}
-              >
+              <IconButton variant="outlined" startIcon={<AccessTimeIcon />}>
                 Mới nhất
-              </CssNewestButton>
+              </IconButton>
             </NavLink>
           </div>
-          <div className={styles.button}>
+          <div className={[styles.button, styles.btn].join(" ")}>
             <NavLink to="/">
-              <InternationalButton
-                variant="outlined"
-                startIcon={<PublicIcon />}
-              >
+              <IconButton variant="outlined" startIcon={<PublicIcon />}>
                 International
-              </InternationalButton>
+              </IconButton>
             </NavLink>
           </div>
-          <div className={styles.button}>
+          <div className={[styles.button, styles.search].join(" ")}>
             <Search />
           </div>
           <div className={styles.button}>

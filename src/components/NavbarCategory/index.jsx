@@ -11,6 +11,24 @@ const NavbarCategory = (props) => {
   const theme = useTheme();
   const styles = useStyles(theme);
 
+  const categories = [
+    "Thời sự",
+    "Góc nhìn",
+    "Thế giới",
+    "Video",
+    "Kinh doanh",
+    "Thời sự",
+    "Góc nhìn",
+    "Thế giới",
+    "Video",
+    "Kinh doanh",
+    "Thời sự",
+    "Góc nhìn",
+    "Thế giới",
+    "Video",
+    "Kinh doanh",
+  ];
+
   return (
     <Box className={styles.root}>
       <NavLink to="/">
@@ -18,24 +36,11 @@ const NavbarCategory = (props) => {
           <HomeIcon />
         </IconButton>
       </NavLink>
-      <Menu label="Thời sự" />
-      <Menu label="Góc nhìn" />
-      <Menu label="Thế giới" />
-      <Menu label="Video" />
-      <Menu label="Podcards" />
-      <Menu label="Kinh doanh" />
-      <Menu label="Thời sự" />
-      <Menu label="Góc nhìn" />
-      <Menu label="Thế giới" />
-      <Menu label="Video" />
-      <Menu label="Podcards" />
-      <Menu label="Kinh doanh" />
-      <Menu label="Thời sự" />
-      <Menu label="Góc nhìn" />
-      <Menu label="Thế giới" />
-      <Menu label="Video" />
-      <Menu label="Podcards" />
-      <Menu label="Kinh doanh" />
+      <>
+        {categories.map((category) => (
+          <Menu label={category} />
+        ))}
+      </>
     </Box>
   );
 };

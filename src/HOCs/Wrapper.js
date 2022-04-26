@@ -1,5 +1,5 @@
 import React from "react";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import NavbarCategory from "../components/NavbarCategory";
 const Wrapper = (Component) => {
@@ -9,7 +9,7 @@ const Wrapper = (Component) => {
         <Header />
         <NavbarCategory />
         <Component {...props} />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   };

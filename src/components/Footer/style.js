@@ -2,9 +2,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: theme.palette.grey.dark,
-    borderTop: "5px solid",
-    borderColor: theme.palette.secondary.main,
+    // background: theme.palette.white,
+    // borderTop: "5px solid",
+    // borderColor: theme.palette.grey.light,
     color: theme.palette.white.main,
     overflow: "hidden",
     padding: theme.spacing(3, 0),

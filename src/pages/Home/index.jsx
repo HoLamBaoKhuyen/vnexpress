@@ -20,7 +20,7 @@ const Home = (props) => {
   //   dispatch(getCurrentWebPage(props.match.url));
   // }, [dispatch, props.match.url]);
 
-  return <>{/* <img src="/images/logo.png" alt="" /> */}</>;
+  return <>Hello</>;
 };
 
 export default wrapper(Home);

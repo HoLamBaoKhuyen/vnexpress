@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
+    overflowX: "scroll",
   },
   menu: {},
   leftMenu: {
